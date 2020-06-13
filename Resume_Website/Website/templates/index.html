@@ -1,0 +1,55 @@
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>Home: Shivam Kumar</title>
+	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+	<script src="{% static '/js/jquery.min.js' %}"></script> 
+	<script src="{% static '/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid navbaritems navbaritemss" style="width: 90%; height: 7%" >
+			<div class="navbar">
+	        	<ul class="nav navbar-nav navbar-right">
+	        		<li><a style="color:black;" href="/ShivamKumar">Home</a></li>
+	 		        <li><a style="color:black;" href="/ShivamKumar/qualification">Qualifications</a></li>
+	 		        <li><a style="color:black;" href="/ShivamKumar/skills">Skills</a></li>
+			        <li><a style="color:black;" href="/ShivamKumar/experience">Experience</a></li>
+			        <li><a style="color:black;" href="/ShivamKumar/projects">Projects</a></li>
+			        <li><a style="color:black;" href="/ShivamKumar/achivements">Achivements</a></li>
+			        <li><a style="color:black;" href="/ShivamKumar/certificate">Certificates</a></li>
+			        <li><a style="color:black;" href="/ShivamKumar/contact">Contact</a></li>
+	      		</ul>
+	    	</div>
+		</div>
+	</nav>
+	<!-- ################## -->
+	<div class="container-fluid">
+		<div id="myCarousel" class="carousel slide carousel-inner" data-ride="carousel">
+			<!--This is for giving o o o at bottom to switch b/w pics-->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!--This is for providing pics-->
+			<div class="item active" align="center" >
+				<img src="{% static '/images/1.PNG' %}" width="100%">
+			</div>
+			<div class="item" align="center">
+				<img src="{% static '/images/2.PNG' %}" width="100%">
+			</div>
+			<div class="item" align="center">
+				<img src="{% static '/images/3.PNG' %}" width="100%">
+			</div>
+		</div>
+	</div>
+<br>
+	<div>
+    	<p style="height:20px; padding-left: 20px; background-color: black; color: white;">Copyright &copy; SHIVAMKR21 2020</p>
+	</div>
+
+</body>
+</html>
