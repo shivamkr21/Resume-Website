@@ -1,13 +1,16 @@
-{% load staticfiles %}
-
+{% load staticfiles %}<!-- This website is made with Django(Python web framework)-->
+<!-- Please take care of href(hyperlink refrences) while coping this project -->
 <html>
 <head>
 	<title>Home: Shivam Kumar</title>
 	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
 	<script src="{% static '/js/jquery.min.js' %}"></script> 
-	<script src="{% static '/js/bootstrap.min.js' %}"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- <script src="{% static '/js/bootstrap.min.js' %}"></script> -->
 </head>
 <body>
+<!-- ################## -->
+<!-- Navbar -->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid navbaritems navbaritemss" style="width: 90%; height: 7%" >
 			<div class="navbar">
@@ -24,32 +27,51 @@
 	    	</div>
 		</div>
 	</nav>
-	<!-- ################## -->
-	<div class="container-fluid">
-		<div id="myCarousel" class="carousel slide carousel-inner" data-ride="carousel">
-			<!--This is for giving o o o at bottom to switch b/w pics-->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
+<!-- ################## -->
+<!-- Crousel -->
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static '/images/test.PNG' %}" style="padding-left: 7%; height: 80%; width: 114%;">
+		</div>
+		<div class="col-sm-9">
+			<div class="container-fluid">
+				<div id="myCarousel" class="carousel slide carousel-inner" data-ride="carousel">
+					<!--This is for giving o o o at bottom to switch b/w pics-->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
 
-			<!--This is for providing pics-->
-			<div class="item active" align="center" >
-				<img src="{% static '/images/1.PNG' %}" width="100%">
-			</div>
-			<div class="item" align="center">
-				<img src="{% static '/images/2.PNG' %}" width="100%">
-			</div>
-			<div class="item" align="center">
-				<img src="{% static '/images/3.PNG' %}" width="100%">
+					<!--This is for providing pics-->
+					<div class="item active" align="center">
+						<img src="{% static '/images/1.PNG' %}" style="height: 80%; width: 100%;">
+					</div>
+					<div class="item" align="center">
+						<img src="{% static '/images/2.PNG' %}" style="height: 80%; width: 100%;">
+					</div>
+					<div class="item" align="center">
+						<img src="{% static '/images/3.PNG' %}" style="height: 80%; width: 100%;">
+					</div>
+					<!--This is for giving > button to move to next pic-->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        				<span class="glyphicon glyphicon-chevron-left"></span>
+		        		<span class="sr-only">Previous</span>
+			        </a>
+                    <!--This is for giving < button to move to previous pic-->
+			        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				        <span class="glyphicon glyphicon-chevron-right"></span>
+				        <span class="sr-only">Next</span>
+			        </a>
+				</div>
 			</div>
 		</div>
 	</div>
-<br>
-	<div>
-    	<p style="height:20px; padding-left: 20px; background-color: black; color: white;">Copyright &copy; SHIVAMKR21 2020</p>
+<!-- ################## -->
+<!-- Footer -->
+	<div style="position: absolute; bottom: 0px; background-color: #e6e6e6; width: 100%;">
+    	<p style="height: 35px; padding-left:86%; color: black; padding-top: 11px">&copy; SHIVAMKR21 2020</p>
 	</div>
-
 </body>
 </html>
+<!-- Created and Designed by Shivam Kumar(shivamkr21) -->
